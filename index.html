@@ -103,13 +103,13 @@
 
           
             <div class="bg-amber-200  rounded  text-blue-900 hover:bg-amber-400 flex px-1 py-1 md:px-2.5 md:py-2">
-              <button class= "flex  justify-center items-center gap-1">
+              <button class= "text-xs md:text-lg flex  justify-center items-center gap-1">
             Login
           </button>
             </div>
          
           <!--this is try whitepace free section  -->
-          <div class="flex bg-blue-400 rounded opacity-100  text-white gap-1.5 md:gap-2 hover:bg-blue-600 px-1.5 py-1  md:px-2.5 md:py-2">
+          <div class="text-xs md:text-lg flex bg-blue-400 rounded opacity-100  text-white gap-1.5 md:gap-2 hover:bg-blue-600 px-1.5 py-1  md:px-2.5 md:py-2">
             <button class="flex  justify-center items-center gap-1">try <span class="hidden md:flex" > whitepsce </span>free</button>
             <div class="flex items-center">
               <img class="" src="./img/arr1.png" alt="" />
@@ -173,7 +173,7 @@
             </h1>
             <br />
             <p2 class="">
-              mages, videos, PDFs and audio files are supported. Create math
+              Images, videos, PDFs and audio files are supported. Create math
               expressions and diagrams directly from the app. Take photos with
               the mobile app and save them to a note
             </p2>
@@ -318,7 +318,7 @@
         <!-- this is free section -->
         <div class="  border-amber-200 border rounded-xl  p-2 md:p-6 mt-10 mb-10 shadow-xs min-w-1/4">
           <!-- this is heading -->
-          <div class="gap-2">
+          <div class="flex flex-col gap-3">
             <h1><b>Free</b></h1>
             <h1><B>$0</B></h1>
             <h6>Capture ideas and find them quickly</h6>
@@ -345,7 +345,7 @@
         <!-- this is personal section -->
         <div class=" shadow-sm  bg-blue-900 text-white rounded-xl pl-6 md:pr-6 md:pt-14 md:pb-14 p-2 min-w-1/4">
           <!-- this is heading -->
-          <div class="gap-2">
+          <div class="flex flex-col gap-3">
             <h1><b>Personal</b></h1>
             <h1 class="text-amber-200"><B>$11.99</B></h1>
             <h6>Keep home and family on track</h6>
@@ -372,7 +372,7 @@
         <!-- this is organization section -->
         <div class=" border-amber-200 border shadow-xs  rounded-xl p-2 md:p-6 mt-10 mb-10  min-w-1/4">
           <!-- this is heading -->
-          <div class="gap-2">
+          <div class=" flex flex-col gap-3">
             <h1><b>Organization</b></h1>
             <h1><B>$49.99</B></h1>
             <h6>Capture ideas and find them quickly</h6>
@@ -506,52 +506,59 @@
       <!-- what our client says -->
       <div class=" md:max-w-5/6  flex flex-col md:flex-row flex-wrap items-center justify-center gap-2 md:gap-6 bg-white/95  ">
         <!-- client1 -->
-        <div class=" shadow-sm md:max-w-1/4  max-w-1/2 flex flex-col  p-2 md:p-4 rounded-sm">
+        <div id="client1"  class=" shadow-sm md:max-w-1/3 lg:max-w-1/4  max-w-2/3 flex flex-col  p-2 md:p-4 rounded-sm">
           <div class="border-black border-b-2 pb-4  m-4 flex flex-col gap-4 ">
             <img class="h-10  w-16 " src="./img/blue.png" alt="">
             <p2 class="  text-black font-light pt-2">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.
             </p2>
           </div>
-          <div class="flex  gap-4 md:gap-6 m-4  items-center justify-center">
+          <div class="flex  gap-4 md:gap-6 m-4 ">
             <img class="h-14 w-14" src="img/Avater1.png" alt="">
             <div class="flex flex-col gap-2">
-              <p1 class=" text-center md:text-left">Oberon Shaw, MCH</p1>
-              <p3 class="  text-black font-light text-center md:text-left ">Head of Talent Acquisition, North America</p3>
+              <p1 class="  md:text-left">Oberon Shaw, MCH</p1>
+              <p3 class="  text-black font-light  md:text-left ">Head of Talent Acquisition, North America</p3>
             </div>
           </div>
         </div>
         <!-- client2 -->
-        <div class="  bg-blue-400/95 md:max-w-1/4  max-w-1/2  text-white flex flex-col  p-2 md:p-4 rounded-sm">
+        <div id="client2"  class="  bg-blue-400/95 md:max-w-1/3 lg:max-w-1/4   max-w-2/3  text-white flex flex-col  p-2 md:p-4 rounded-sm">
           <div class=" border-b-2 pb-4  m-4 flex flex-col gap-4">
             <img class="h-10  w-16 " src="./img/Quote.png" alt="">
             <p2 class="  font-light pt-2">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.
             </p2>
           </div>
-          <div class="flex  gap-4  m-4 md:gap-6 items-center justify-center">
+          <div class="flex  gap-4  m-4 md:gap-6 ">
             <img class="h-14 w-14" src="img/Avater2.png" alt="">
             <div class="flex flex-col gap-2">
-              <p2 class=" text-center md:text-left text-black">Oberon Shaw, MCH</p2>
-              <p3 class="  font-light text-center md:text-left ">Head of Talent Acquisition, North America</p3>
+              <p2 class=" md:text-left text-black">Oberon Shaw, MCH</p2>
+              <p3 class="  font-light  md:text-left ">Head of Talent Acquisition, North America</p3>
             </div>
           </div>
         </div>
         <!-- this is client 3 -->
-         <div class=" bg-blue-400/95 md:max-w-1/4  max-w-1/2  text-white flex flex-col  p-2 md:p-4 rounded-sm ">
+         <div id="client3" class=" bg-blue-400/95 md:max-w-1/3 lg:max-w-1/4  max-w-2/3  text-white flex flex-col  p-2 md:p-4 rounded-sm ">
           <div class=" border-b-2 pb-4  m-4 flex flex-col gap-4">
             <img class="h-10  w-16 " src="./img/Quote.png" alt="">
             <p2 class=" font-light pt-2">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.
             </p2>
           </div>
-          <div class="flex  gap-4 md:gap-6 m-4  items-center justify-center">
+          <div class="flex  gap-4 md:gap-6 m-4 ">
             <img class="h-14 w-14" src="img/Avater3.png" alt="">
             <div class="flex flex-col gap-2">
-              <p1 class="text-center  md:text-left text-black"">Oberon Shaw, MCH</p1>
-              <p3 class="  font-light text-center md:text-left ">Head of Talent Acquisition, North America</p3>
+              <p1 class="  md:text-left text-black"">Oberon Shaw, MCH</p1>
+              <p3 class="  font-light  md:text-left ">Head of Talent Acquisition, North America</p3>
             </div>
           </div>
         </div>
       </div>
-      <div><img class="h-auto w-8" src="./img/Slider.png" alt=""></div>
+      <div class=" point flex gap-1">
+        <button onclick="clientShow1()" id="point1" class="border-4  border-blue-500 rounded-full"><span></span></button>
+        <button id="point2" class="border-4 border-blue-900 rounded-full"><span></span></button>
+        <button id="point3" class="border-4 border-blue-500 rounded-full"><span></span></button>
+
+      </div>
+
+      <!-- <div><img class="h-auto w-8" src="./img/Slider.png" alt=""></div> -->
     </div> 
     <!-- this  is free trial field-->
      <div class="w-full bg-blue-900/95 pt-6 pb-6 md:pt-24 md:pb-24  flex justify-center items-center text-white">

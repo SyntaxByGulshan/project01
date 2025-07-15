@@ -1,6 +1,5 @@
 function show(){
 console.log("hello world");
-
 const opt=document.querySelector('.options')
 const arr1=document.querySelector('.vector1')
 const arr2=document.querySelector('.vector2')
@@ -17,3 +16,14 @@ arr2.classList.remove('hidden')
    arr1.classList.remove('hidden')
 }
 }
+function clientShow1(){
+   const point=document.querySelector('.point')
+   const point1=point.querySelector('#point1')
+   const point2=point.querySelector('#point2')
+   const point3=point.querySelector('#point3')
+
+   point1.className('border-blue-900 border-blue-900 rounded-full')
+   point2.className('border-blue-500 border-blue-900 rounded-full')
+   point3.className('border-blue-500 border-blue-900 rounded-full')
+}
+
