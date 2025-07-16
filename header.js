@@ -19,11 +19,95 @@ arr2.classList.remove('hidden')
 function clientShow1(){
    const point=document.querySelector('.point')
    const point1=point.querySelector('#point1')
-   const point2=point.querySelector('#point2')
-   const point3=point.querySelector('#point3')
-
-   point1.className('border-blue-900 border-blue-900 rounded-full')
-   point2.className('border-blue-500 border-blue-900 rounded-full')
-   point3.className('border-blue-500 border-blue-900 rounded-full')
+   console.log(point1.classList)
+   if(point1.classList.contains('border-blue-500')){
+      const clients=document.querySelector('#clients')
+      const client1=clients.querySelector("#client1")
+      console.log(client1);
+      client1.classList.remove('opacity-30')
+      client1.classList.add('opacity-100')
+      client1.classList.remove('hidden')
+      point1.classList.remove("border-blue-500")
+      point1.classList.add('border-blue-900')
+       const point2=point.querySelector('#point2')
+      if(point2.classList.contains('border-blue-900')){
+         const client2=clients.querySelector("#client2")
+         console.log(client2);
+         client2.classList.remove('opacity-100')
+         client2.classList.add('opacity-30')
+         client2.classList.add('hidden')
+         point2.classList.remove('border-blue-900')
+         point2.classList.add('border-blue-500')
+      }else{
+          const client3=clients.querySelector("#client3")
+         client3.classList.remove('opacity-100')
+         client3.classList.add('opacity-30')
+         client3.classList.add('hidden')
+         const point3=point.querySelector('#point3')
+         point3.classList.remove('border-blue-900')
+         point3.classList.add('border-blue-500')
+      }
+   }  
 }
-
+function clientShow2(){
+   const point=document.querySelector('.point')
+   const point2=point.querySelector('#point2')
+  console.log(point2.classList);
+   if(point2.classList.contains('border-blue-500')){
+      const clients=document.querySelector('#clients')
+      const client2=clients.querySelector("#client2")
+      client2.classList.remove('opacity-30')
+      client2.classList.add('opacity-100')
+      client2.classList.remove('hidden')
+      point2.classList.remove("border-blue-500")
+      point2.classList.add('border-blue-900')
+      const point1=point.querySelector('#point1')
+      if(point1.classList.contains('border-blue-900')){
+          const client1=clients.querySelector("#client1")
+          client1.classList.remove('opacity-100')
+          client1.classList.add('opacity-30')
+          client1.classList.add('hidden')
+         point1.classList.remove('border-blue-900')
+         point1.classList.add('border-blue-500')
+      }else{
+          const client3=clients.querySelector("#client3")
+           client3.classList.remove('opacity-100')
+           client3.classList.add('opacity-30')
+           client3.classList.add('hidden')
+         const point3=point.querySelector('#point3')
+         point3.classList.remove('border-blue-900')
+         point3.classList.add('border-blue-500')
+      }
+   }  
+}
+function clientShow3(){
+   const point=document.querySelector('.point')
+   const point3=point.querySelector('#point3')
+   console.log(point3.classList);
+   if(point3.classList.contains('border-blue-500')){
+       const clients=document.querySelector('#clients')
+       const client3=clients.querySelector("#client3")
+           client3.classList.remove('opacity-30')
+           client3.classList.add('opacity-100')
+            client3.classList.remove('hidden')
+      point3.classList.remove("border-blue-500")
+      point3.classList.add('border-blue-900')
+      const point2=point.querySelector('#point2')
+      if(point2.classList.contains('border-blue-900')){
+         const client2=clients.querySelector("#client2")
+      client2.classList.remove('opacity-100')
+      client2.classList.add('opacity-30')
+       client2.classList.add('hidden')
+         point2.classList.remove('border-blue-900')
+         point2.classList.add('border-blue-500')
+      }else{
+         const client1=clients.querySelector("#client1")
+          client1.classList.remove('opacity-100')
+          client1.classList.add('opacity-30')
+           client1.classList.add('hidden')
+          const point1=point.querySelector('#point1')
+         point1.classList.remove('border-blue-900')
+         point1.classList.add('border-blue-500')
+      }
+   }  
+}
